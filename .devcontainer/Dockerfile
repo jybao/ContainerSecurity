@@ -4,7 +4,7 @@ ARG VARIANT="16-buster"
 FROM mcr.microsoft.com/vscode/devcontainers/typescript-node:0-${VARIANT}
 
 ENV PATH=/root/.cargo/bin:$PATH
-ENV REACT_APP_MAGICEDEN_API_HOST http://localhost:3001
+ENV REACT_APP_ME_API_HOST http://localhost:3001
 
 RUN apt-get update
 RUN apt-get install -y \

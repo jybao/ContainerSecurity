@@ -1,6 +1,6 @@
 #This is a sample Image 
-FROM ubuntu 
+FROM alpine:3.6
 
-RUN apt-get update 
-RUN apt-get install –y nginx 
+# RUN apt-get update 
+#RUN apt-get install –y nginx 
 CMD [“echo”,”Image created”] 
